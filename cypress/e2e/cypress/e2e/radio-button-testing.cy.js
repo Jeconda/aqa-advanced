@@ -34,4 +34,4 @@ it('check "No" selection', () => {
     cy.get('.text-success')
     .should('not.exist');
 });
-});
+})

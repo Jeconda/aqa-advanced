@@ -28,4 +28,4 @@ it('selecting the "Home" flag and checking all child elements', () => {
     cy.get('[title="Expand all"]')
     .should('exist');
 });
-});
+})
