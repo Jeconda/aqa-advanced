@@ -26,6 +26,6 @@ it('selecting the "Home" flag and checking all child elements', () => {
     cy.get('[title="Collapse all"]')
     .click()
     cy.get('[title="Expand all"]')
-    .should('exist');
+    .should('exist')
 });
 });

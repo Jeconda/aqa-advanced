@@ -31,4 +31,4 @@ it('filling out the entire form', () => {
         cy.get('p[id="currentAddress"]').should('contain', currentAddress);
         cy.get('p[id="permanentAddress"]').should('contain', permanentAddress);
 });
-})
+});

@@ -32,6 +32,6 @@ it('check "No" selection', () => {
     .should('be.disabled')
     .click({force: true});
     cy.get('.text-success')
-    .should('not.exist');
+    .should('not.exist')
 });
 });
