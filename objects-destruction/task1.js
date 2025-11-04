@@ -7,3 +7,4 @@ const { title, year, author } = book;
 console.log(title);
 console.log(year);
 console.log(author);
+
