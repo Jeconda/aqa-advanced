@@ -9,8 +9,8 @@ describe('DemoQA radio Button - check all selections', () => {
 });
 
 it('check "Yes" selection', () => {
-    cy.get('#yesradio')
-    .click();
+    cy.get('#yesRadio')
+    .check({force: true});
     cy.get('#yesRadio').should('be.checked');
     cy.get('#impressiveRadio')
     .should('not.be.checked');
@@ -19,9 +19,9 @@ it('check "Yes" selection', () => {
 });
 it('check "impressive" selection', () => {
      cy.get('#impressiveRadio')
-    .click();
+    .check({force: true});
     cy.get('#impressiveRadio').should('be.checked');
-    cy.get('#yesradio')
+    cy.get('#yesRadio')
     .should('not.be.checked');
     cy.get('.text-success')
     .should('have.text', 'Impressive');
@@ -32,6 +32,6 @@ it('check "No" selection', () => {
     .should('be.disabled')
     .click({force: true});
     cy.get('.text-success')
-    .should('not.exist')
+    .should('not.exist');
 });
 });
