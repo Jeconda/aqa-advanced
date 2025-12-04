@@ -14,7 +14,7 @@ it('selecting the "Home" flag and checking all child elements', () => {
     cy.get('[title="Collapse all"]')
     .should('exist');
     cy.get('#tree-node-home')
-    .click()
+    .click({force: true})
     .should('be.checked')
     cy.get('#result')
     .should('be.visible');
